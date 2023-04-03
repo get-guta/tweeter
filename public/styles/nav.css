@@ -1,0 +1,38 @@
+nav{
+  display:flex;
+  height: 120px; 
+  background-color: #4056A1;
+  color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* overflow: hidden; */
+ 
+}
+.rigth-item{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Source Sans Pro', sans-serif;
+  font-weight: 300;
+
+}
+.rigth-item p{
+  margin:0px;
+}
+.rigth-item i{
+ color: crimson;
+}
+
+.nav-span{
+  font-family: 'Bungee', cursive;
+  font-weight: 400;
+}
+
+
