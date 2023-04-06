@@ -1,6 +1,10 @@
-nav{
-  display:flex;
-  height: 120px; 
+/*
+ * CSS styles for elements under nav
+ */
+
+nav {
+  display: flex;
+  height: 120px;
   background-color: #4056A1;
   color: #FFFFFF;
   justify-content: space-between;
@@ -11,28 +15,38 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  /* overflow: hidden; */
- 
 }
-.rigth-item{
-  display:flex;
+
+.rigth-item {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 
 }
-.rigth-item p{
-  margin:0px;
-}
-.rigth-item i{
- color: crimson;
+
+.rigth-item p {
+  margin: 0px;
 }
 
-.nav-span{
+.rigth-item i {
+  color: crimson;
+}
+
+.nav-span {
   font-family: 'Bungee', cursive;
   font-weight: 400;
 }
 
+/*
+ * nav style effect for below desktop size screens
+ */
+@media only screen and (max-width: 1024px) {
+  nav {
+    background-color: darkgoldenrod;
+    ;
+  }
 
+}

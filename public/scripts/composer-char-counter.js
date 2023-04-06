@@ -1,5 +1,7 @@
+/*
+JS function for character counter
+*/
 $(document).ready(function () {
-  // --- our code goes here ---
   $("#tweet-text").on('input', function () {
     const value = $(this).val();
     console.log(value.length);

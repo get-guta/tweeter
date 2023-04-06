@@ -25,10 +25,9 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
 
-  <!-- App JS -->
-  <script type="text/javascript" src="/scripts/client.js"></script>
-  <script type="text/javascript" src="/scripts/Composer-char-counter.js"></script>
 
 </head>
 
@@ -42,7 +41,7 @@
       <i class="fa-solid fa-angles-down"></i>
     </div>
   </nav>
-
+<div class="header-container">
   <header class="main-header">
     <div class="profile-picture">
       <img src="/images/profile-hex.png">
@@ -52,7 +51,12 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <!-- <h4 class="form-title">Compose Tweet</h4> -->
-    <form method="post" action="/tweets/">
+    <span id="validation" hidden>
+      <i class="fa-solid fa-triangle-exclamation" style="color: #c7421a;"></i>
+      <span id="error"></span>
+      <i class="fa-solid fa-triangle-exclamation" style="color: #c7421a;"></i>
+    </span> 
+    <form id="new-tweet">
       <!-- <label for="tweet-text"></label> -->
       <input type="text" name="text" id="tweet-text" class="tweet-text" placeholder="What are you humming about?" />
       <hr />
@@ -61,27 +65,18 @@
         <output name="counter" id="counter" for="tweet-text">140</output>
       </div>
     </form>
-    <article class="tweets">
-      <header class="tweet-header">
-        <span><i class="fa-solid fa-user"></i> Newton</span>
-        <span class="tweet-username"> @SirIsaac</span>
-      </header>
-      <p>If I have seen further, it is by standing on giant's shoulder. </p>
-
-      <footer class="tweet-footer">
-        <hr />
-        <span class="footer-span">
-          <span>10 days ago</span>
-          <span class="icons">
-            <a href=""><i class="fa-solid fa-flag"></i></a>
-            <a href=""><i class="fa-solid fa-retweet"></i></a>
-            <a href=""><i class="fa-solid fa-heart"></i></a>
-          </span>
-        </span>
-      </footer>
-    </article>
+    <!-- Posted Tweets -->
+    <section id="tweets-container"></section> 
 
   </main>
+</div>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/Composer-char-counter.js"></script>
+
+
+  
 </body>
 
 </html>

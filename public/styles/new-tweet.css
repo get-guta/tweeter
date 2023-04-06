@@ -1,9 +1,13 @@
+/*
+ * CSS style for elements related to new tweet form
+ */
+
 .submit-counter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-family: 'Bungee', cursive;
-  padding: 10px;
+ 
 
 }
 
@@ -11,8 +15,6 @@
   width: 100%;
   border: none;
   background: transparent;
- 
-
 }
 
 .tweet-button {
@@ -59,13 +61,30 @@ hr {
 .icons {
   display: flex;
   justify-content: space-between;
-  width: 5%;
+  width: 10%;
 }
 
 a:hover {
   color: rgb(255, 195, 105);
 }
 .name{
-  
   font-style: normal;
 }
+#validation{
+  border: solid red;
+  height: 40px;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+  /* Tablet: max width of 768px */
+@media only screen and (max-width: 768px) {  
+  .icons {
+    width: 15%;
+  }
+  
+}
+
+

@@ -27,7 +27,9 @@ body {
   background-size: cover;
  
 }
-
+/*
+ * Global screen Tweet container style
+ */
 .container{
   width: 90%;
   display: flex;
@@ -39,8 +41,18 @@ body {
   
 }
 
-
-
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
+ * above desktop size screen effects
  */
+@media only screen and (min-width: 1024px) {
+  .container{
+    float: right;
+    width:50%;
+    padding-top: 10px;
+    
+  }
+  .header-container{
+    padding:200px 40px 0px 80px;
+  }
+ 
+}

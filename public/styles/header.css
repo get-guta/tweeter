@@ -1,3 +1,7 @@
+/*
+CSS styles of the header components
+*/
+
 .main-header{
   display: flex;
   flex-direction: column;
@@ -6,19 +10,53 @@
   height: 520px;
   width: 100%;
   background-color:darkgoldenrod;
-  padding-top: 150px;
+  
 
 }
+
 .profile-picture{
-  display: block;
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: row;  */
+
   margin:0px auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 4%;
  
 
 }
 .username{
   text-align: center;
   margin-top: 0px;
+  padding-top:50px;
+  padding-left: 4%;
+  font-size: 32px;
 }
+
+/*
+ * Header effect for desktop & above size
+ */
+@media only screen and (min-width: 1024px) {
+   
+  .main-header{
+    width:40%;
+    float: left;
+    
+    
+  } 
+  
+}
+/*
+ * Header effect for below desktop size
+ */
+@media only screen and (max-width: 1024px) {
+  .main-header{
+    padding-top: 150px;
+    
+  } 
+  .username{
+    padding-top:30px;
+  }
+ 
+}
+
+
+
