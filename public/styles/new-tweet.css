@@ -40,6 +40,7 @@
   padding: 10px;
   font-weight: normal;
   font-style: normal;
+  overflow-wrap: break-word;
 }
 .tweets:hover {
   box-shadow: 5px 10px rgb(174, 189, 213);
